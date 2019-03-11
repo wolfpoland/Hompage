@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components"
 
 const TextContainer = styled.div`
   width: 100%;
@@ -9,6 +9,4 @@ const TextContainer = styled.div`
   padding: 17px;
 `
 
-
-
-export default TextContainer;
+export default TextContainer
