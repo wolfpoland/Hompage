@@ -2,7 +2,8 @@ import React from "react"
 import { Link } from "gatsby"
 import Particles from "react-particles-js"
 import { Transition, Spring, Trail } from "react-spring/renderprops"
-import uuid from "uuid"
+import uuid from "uuid";
+import params from '../resources/particles-params';
 
 import Layout from "../components/layout"
 import Image from "../components/image"
@@ -68,7 +69,7 @@ const IndexPage = () => {
   welcome = transformToAnimatedTextOpacity("Welcome into,")
 
   items = transformToAnimatedTextOpacity(
-    "Patryk Krasuski Front end Developer Homepeage"
+    "Patryk Krasuski Front end Developer Homepage"
   )
 
   return (
@@ -77,34 +78,7 @@ const IndexPage = () => {
       <Jumbotron>
         <Particles
           className="particle-js"
-          params={{
-            particles: {
-              line_linked: {
-                enable: true,
-                distance: 150,
-                color: "#3c3f40",
-                opacity: "0.4",
-                width: 1,
-              },
-              color: {
-                value: "#3c3f40",
-              },
-              number: {
-                value: 50,
-              },
-              size: {
-                value: 3,
-              },
-              shape: {
-                polygon: {
-                  nb_sides: 5,
-                },
-                stroke: {
-                  color: "",
-                },
-              },
-            },
-          }}
+          params={params}
         />
         <Name className="presentation">
           <NameRow>
@@ -133,7 +107,7 @@ const IndexPage = () => {
               to={{ opacity: 1, marginTop: 0 }}>
               {props => {
                 return (
-                  <NameText style={props} textColor="#b68bb2" textSize="20px">
+                  <NameText style={props} textColor="#977494" textSize="20px">
                     From here You can
                   </NameText>
                 )
