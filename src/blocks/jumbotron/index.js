@@ -10,6 +10,8 @@ const Jumbotron = styled.div`
   justify-content: flex-start;
   width: 100%;
   height: 100vh;
+  overflow: hidden;
+  white-space: nowrap;
 
   .particle-js {
     position: absolute;
