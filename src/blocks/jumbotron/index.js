@@ -19,6 +19,7 @@ const Jumbotron = styled.div`
     height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
   }
 `
 

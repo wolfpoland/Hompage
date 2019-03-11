@@ -1,10 +1,10 @@
+import React, { memo } from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React from "react"
 
-import HeaderStyled from '../blocks/header/index';
+import HeaderStyled from "../blocks/header/index"
 
-const Header = ({ siteTitle }) => (
+const Header = memo(({ siteTitle }) => (
   <HeaderStyled>
     <HeaderStyled.Content>
       <HeaderStyled.Title>
@@ -12,7 +12,7 @@ const Header = ({ siteTitle }) => (
       </HeaderStyled.Title>
     </HeaderStyled.Content>
   </HeaderStyled>
-)
+))
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
