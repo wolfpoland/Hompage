@@ -12,6 +12,7 @@ const Jumbotron = styled.div`
   height: 100vh;
   overflow: hidden;
   white-space: nowrap;
+  z-index: 2;
 
   .particle-js {
     position: absolute;
