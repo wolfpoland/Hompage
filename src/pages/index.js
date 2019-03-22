@@ -11,6 +11,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import seoConfig from "../resources/seo.config"
 
+import Cards from '../components/cards'
+
 const IndexPage = memo(() => (
   <Layout>
     <SEO title="Homepage" keywords={seoConfig.homepage} />
@@ -21,22 +23,22 @@ const IndexPage = memo(() => (
         <AnimatedTextRow text="Welcome to," />
         <AnimatedTextRow text="Patryk Krasuski Front end Developer Homepage" />
         <Row centredText>
-          <Spring
-            from={{ opacity: 0, marginTop: -500 }}
-            to={{ opacity: 1, marginTop: 0 }}
-          >
+          <Spring delay={100} from={{ opacity: 0 }} to={{ opacity: 1 }}>
             {props => {
               return (
                 <Jumbotron.Text
                   style={props}
                   textColor="#977494"
-                  textSize="20px"
+                  textSize="25px"
                 >
                   From here You can
                 </Jumbotron.Text>
               )
             }}
           </Spring>
+        </Row>
+        <Row justifyCenter>
+          <Cards />
         </Row>
       </Jumbotron.TextContainer>
     </Jumbotron>

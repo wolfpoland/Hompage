@@ -1,3 +1,3 @@
-import Row from './row';
+import Row from "./row"
 
-export {Row};
+export { Row }
